@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Maria Brown', '123.456.789-00', 6500.00, '1985-03-15', 2);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Alex Green', '987.654.321-11', 4800.50, '1990-07-22', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Bob Grey', '456.789.123-22', 7200.00, '1982-11-10', 3);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Anna White', '321.654.987-33', 5300.75, '1995-06-01', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('John Black', '654.321.987-44', 9500.25, '1978-09-30', 4);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Diana King', '741.852.963-55', 3100.00, '1999-01-18', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Bruce Wayne', '852.963.741-66', 15000.00, '1975-02-19', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Clark Kent', '963.741.852-77', 12000.50, '1980-04-25', 1);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Peter Parker', '159.357.258-88', 2800.00, '2001-08-10', 0);
+INSERT INTO tb_client (name, cpf, income, birth_date, children) VALUES ('Tony Stark', '258.159.357-99', 25000.00, '1970-05-29', 1);
