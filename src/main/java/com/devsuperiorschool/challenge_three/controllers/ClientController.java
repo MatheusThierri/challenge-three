@@ -2,6 +2,7 @@ package com.devsuperiorschool.challenge_three.controllers;
 
 import com.devsuperiorschool.challenge_three.dto.ClientDTO;
 import com.devsuperiorschool.challenge_three.services.ClientService;
+import jakarta.validation.Valid;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +31,7 @@ public class ClientController {
     }
 
     @PostMapping
-    public ResponseEntity<ClientDTO> save(@RequestBody ClientDTO clientDTO) {
+    public ResponseEntity<ClientDTO> save(@Valid @RequestBody ClientDTO clientDTO) {
         clientDTO = clientService.save(clientDTO);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
@@ -40,7 +41,7 @@ public class ClientController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<ClientDTO> update(@PathVariable Long id, @RequestBody ClientDTO clientDTO) {
+    public ResponseEntity<ClientDTO> update(@PathVariable Long id, @Valid @RequestBody ClientDTO clientDTO) {
         return ResponseEntity.ok(clientService.update(id, clientDTO));
     }
 
